@@ -1,9 +1,5 @@
 package precipitated.will.classLoader;
 
-import sun.applet.AppletClassLoader;
-
-import java.lang.reflect.Method;
-
 /**
  * Created by will.wang on 2015/4/23.
  */
