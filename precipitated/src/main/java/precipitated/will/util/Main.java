@@ -13,7 +13,7 @@ import java.io.*;
  */
 public class Main {
 
-    private static final String URL = "http://l-trainhcs-qm1.t.cn6.qunar.com:9001/main.jsp";
+    private static final String URL = "http://xxx:9001/main.jsp";
     private static final int TIME_OUT = 5;
 
     public static void main(String[] args) throws InterruptedException {
