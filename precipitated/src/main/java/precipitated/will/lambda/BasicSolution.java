@@ -11,12 +11,12 @@ import java.util.Set;
 public class BasicSolution {
 
     public static void main(String[] args) {
-        Num42 i = ()
-                ->
-                4;
+//        Num42 i = ()
+//                ->
+//                4;
 
         int n = 9;
-        Num42[] a = new Num42[] {() -> n, () -> n+1};
+//        Num42[] a = new Num42[] {() -> n, () -> n+1};
 //        System.out.println(i.getI());
 
         new BasicSolution().doSomething();
