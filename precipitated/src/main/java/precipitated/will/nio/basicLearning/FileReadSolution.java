@@ -9,6 +9,7 @@ import java.nio.ByteBuffer;
 import java.nio.CharBuffer;
 import java.nio.channels.FileChannel;
 import java.nio.charset.Charset;
+import java.nio.charset.CharsetDecoder;
 
 /**
  * Created by will.wang on 2017/2/9.
@@ -30,13 +31,20 @@ public class FileReadSolution {
         int chunk = 3;
 
         ByteBuffer buffer = ByteBuffer.allocate(chunk);
-        Charset charset = Charsets.UTF_8;
+        CharBuffer charBuffer = CharBuffer.allocate(chunk);
+        Charset charset = Charset.forName("utf8");
+        CharsetDecoder decoder = charset.newDecoder();
         while (channel.read(buffer) > 0) {
             buffer.flip();
-            while (buffer.hasRemaining()) {
-                System.out.println((char)buffer.get());
-            }
+
+            decoder.decode(buffer, charBuffer, false);
+            charBuffer.flip();
+
+//            while (charBuffer.hasRemaining()) {
+                System.out.println(charBuffer);
+//            }
             buffer.clear();
+            charBuffer.clear();
         }
     }
 
