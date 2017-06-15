@@ -19,6 +19,11 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
+                <groupId>qunar.tc</groupId>
+                <artifactId>qmq-common</artifactId>
+                <version>1.2.2</version>
+            </dependency>
+            <dependency>
                 <groupId>com.squareup.okhttp</groupId>
                 <artifactId>okhttp-apache</artifactId>
                 <version>2.7.5</version>
@@ -157,6 +162,10 @@
     </dependencyManagement>
 
   <dependencies>
+      <dependency>
+          <groupId>qunar.tc</groupId>
+          <artifactId>qmq-common</artifactId>
+      </dependency>
       <dependency>
           <groupId>com.squareup.okhttp</groupId>
           <artifactId>okhttp-apache</artifactId>
