@@ -14,10 +14,16 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <activemq_version>5.13.3</activemq_version>
   </properties>
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>1.7.25</version>
+            </dependency>
             <dependency>
                 <groupId>com.squareup.okhttp</groupId>
                 <artifactId>okhttp-apache</artifactId>
@@ -157,6 +163,21 @@
     </dependencyManagement>
 
   <dependencies>
+      <dependency>
+          <groupId>org.slf4j</groupId>
+          <artifactId>slf4j-api</artifactId>
+      </dependency>
+      <dependency>
+          <groupId>org.apache.activemq</groupId>
+          <artifactId>activemq-all</artifactId>
+          <version>${activemq_version}</version>
+      </dependency>
+
+      <dependency>
+          <groupId>org.apache.activemq</groupId>
+          <artifactId>activemq-pool</artifactId>
+          <version>${activemq_version}</version>
+      </dependency>
       <dependency>
           <groupId>com.squareup.okhttp</groupId>
           <artifactId>okhttp-apache</artifactId>
