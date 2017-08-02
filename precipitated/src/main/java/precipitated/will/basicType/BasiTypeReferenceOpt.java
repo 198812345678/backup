@@ -17,6 +17,9 @@ public class BasiTypeReferenceOpt {
 
 //        Reference<Boolean> booleanReference = new Reference<Boolean>() {
 //        };
+
+        Integer integer = new Integer(1);
+        int i = integer;
     }
 
     private static void changeValue(AtomicReference<Boolean> reference) {

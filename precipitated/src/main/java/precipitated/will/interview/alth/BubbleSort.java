@@ -28,6 +28,6 @@ public class BubbleSort {
     public static void main(String[] args) {
         int[] arr = new int[]{1, 2, 3, 6, 0, 2, 10, 30};
         int[] result = BubbleSort.doSort(arr);
-        System.out.println(JSON.toJSONString(result));
+        System.out.println(JSON.toJSONString(arr));
     }
 }
